@@ -33,6 +33,7 @@ from store t
 	left join sakila.staff sf on sf.store_id =t.store_id
 ```
 
+![01](https://github.com/SeSloup/DB_requests_2/blob/main/screens/01.png)
 
 ### Задание 2
 
@@ -48,6 +49,7 @@ select
 from sakila.film f 
 	where length > (select avg_length from avg_length)
 ```
+![02](https://github.com/SeSloup/DB_requests_2/blob/main/screens/02.png)
 
 ### Задание 3
 
@@ -66,6 +68,7 @@ select
 from sakila.rental r 
 where LAST_DAY(rental_date) = (select mothday from month_number)
 ```
+![03](https://github.com/SeSloup/DB_requests_2/blob/main/screens/03.png)
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
@@ -87,6 +90,7 @@ from
 	from sakila.payment p 
 	group by staff_id ) t
 ```
+![04](https://github.com/SeSloup/DB_requests_2/blob/main/screens/04.png)
 
 ### Задание 5*
 
@@ -131,6 +135,8 @@ select * from
 	select film_id from film_id fi) t 
 left join sakila.film f on t.film_id = f.film_id;
 ```
+![05](https://github.com/SeSloup/DB_requests_2/blob/main/screens/05.png)
+
 
 -----------------------------------------------------------
 Спасибо за проверку! 🍊
